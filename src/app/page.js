@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
 import Link from 'next/link'
+import Footer from "../components/Footer"
+import Header from "../components/Header"
 
 export default function Home() {
   
   return (
     <>
-      <Header isLogged={false} />
+      <Header />
         <main className="p-5">
           <h1 className="text-3xl">Sobre o React</h1>
           <Image 
@@ -24,7 +24,7 @@ export default function Home() {
           </p>
           <Link href="/dashboard">Dashboard</Link>
         </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
